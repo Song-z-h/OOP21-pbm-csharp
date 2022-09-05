@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace OOP21-pbm-csharp.AlessandroStefani
+namespace OOP21pbm_csharp.AlessandroStefani
 {
     class ProfileCredentials
     {
