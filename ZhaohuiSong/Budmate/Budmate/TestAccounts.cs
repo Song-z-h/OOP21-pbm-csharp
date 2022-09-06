@@ -1,11 +1,9 @@
-﻿using System;
-using System.Reflection;
-using NUnit.Framework;
+﻿using NUnit.Framework;
 
 namespace Budmate
 {
     [TestFixture]
-    public class Tests
+    public class TestAccounts
     {
         
         [Test]
