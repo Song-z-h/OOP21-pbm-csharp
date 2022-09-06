@@ -44,9 +44,12 @@
     <ItemGroup>
         <Compile Include="BaseAccount.cs" />
         <Compile Include="IAccount.cs" />
+        <Compile Include="IInvestmentAccount.cs" />
+        <Compile Include="IInvestmentAccountTypeFactory.cs" />
+        <Compile Include="InvestmentAccountTypeFactoryImpl.cs" />
         <Compile Include="NotEnoughFundsException.cs" />
         <Compile Include="SimpleAccount.cs" />
-        <Compile Include="Tests.cs" />
+        <Compile Include="TestAccounts.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

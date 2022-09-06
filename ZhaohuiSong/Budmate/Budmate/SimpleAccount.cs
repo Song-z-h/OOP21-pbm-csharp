@@ -6,12 +6,20 @@ namespace Budmate
     {
         private readonly string _id;
         private readonly Func<double, double, bool> _predicateWithdraw, _predicateDeposit;
+        private const double Precision = 0.01;
 
-        public SimpleAccount(string id, double amount = 0) : this(id,
-            (balance, money) => balance >= money,
-            (balance, money) => true, amount)
-        {
-        }
+         public SimpleAccount(string id, double amount = 0) : this(id,
+             (balance, money) => balance >= money,
+             (balance, money) => true, amount)
+         {
+                //This form actually gives me the null reference...I wonder why..
+                
+                //I see, either using "this" in the constructor or defining overloaded operators cause error when
+                //this class is initialized with static type its interface.
+                
+                //It works if the static type is as same as the SimpleAccount, Since it involves with only one class, 
+                // overloading doesn't work with inheritance...
+         }
 
         public SimpleAccount(string id, Func<double, double, bool> predicateWithdraw,
             Func<double, double, bool> predicateDeposit, double amount = 0)
@@ -24,7 +32,7 @@ namespace Budmate
 
         public SimpleAccount(string id) => _id = id;
 
-        protected override bool CheckWithdrawValidity(double amount) => _predicateWithdraw(GetBalance(), amount);
+        protected override bool CheckWithdrawValidity(double amount) => _predicateWithdraw(GetBalance(), amount) && amount < GetBalance();
 
         protected override bool CheckDepositValidity(double amount) => _predicateDeposit(GetBalance(), amount);
 
@@ -37,11 +45,17 @@ namespace Budmate
         /// <param name="b">second account</param>
         /// <returns>if they have equal balance</returns>
         public static bool operator ==(SimpleAccount a, SimpleAccount b) =>
-            Math.Abs(a.GetBalance() - b.GetBalance()) < 0.01;
+            Math.Abs(a.GetBalance() - b.GetBalance()) < Precision;
+
+        public static bool operator ==(SimpleAccount a, Double b) =>
+            Math.Abs(a.GetBalance() - b) < Precision;
+
+        public static bool operator !=(SimpleAccount a, Double b) =>
+            Math.Abs(a.GetBalance() - b) < Precision;
 
 
         public static bool operator !=(SimpleAccount a, SimpleAccount b) =>
-            Math.Abs(a.GetBalance() - b.GetBalance()) > 0.01;
+            Math.Abs(a.GetBalance() - b.GetBalance()) > Precision;
 
 
         private bool Equals(SimpleAccount other) => _id == other._id;
