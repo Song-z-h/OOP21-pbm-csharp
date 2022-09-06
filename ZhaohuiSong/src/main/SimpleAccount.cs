@@ -2,6 +2,7 @@ using System;
 
 namespace Budmate
 {
+    /// <inheritdoc />
     public class SimpleAccount : BaseAccount
     {
         private readonly string _id;

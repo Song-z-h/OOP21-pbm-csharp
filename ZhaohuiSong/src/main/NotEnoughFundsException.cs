@@ -2,6 +2,9 @@ using System;
 
 namespace Budmate
 {
+    /// <summary>
+    /// Exception for when running out of money
+    /// </summary>
     public class NotEnoughFundsException : ArgumentException
 
     {

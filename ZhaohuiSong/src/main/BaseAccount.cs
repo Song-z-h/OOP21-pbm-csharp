@@ -2,6 +2,7 @@ using System;
 
 namespace Budmate
 {
+    /// <inheritdoc />
     public abstract class BaseAccount : IAccount
     {
         private double _balance;
@@ -17,6 +18,11 @@ namespace Budmate
             }
         }
 
+        /// <summary>
+        ///Check if the user is able to do withdrawl operation
+        /// </summary>
+        /// <param name="amount">the amount of money</param>
+        /// <returns>if the operation went through successfully</returns>
         protected abstract bool CheckWithdrawValidity(double amount);
 
         public void Deposit(double amount)
@@ -31,6 +37,11 @@ namespace Budmate
             }
         }
 
+        /// <summary>
+        /// Check if the user is able to do deposit operation
+        /// </summary>
+        /// <param name="amount">the amount of money</param>
+        /// <returns>if the operation went through successfully</returns>
         protected abstract bool CheckDepositValidity(double amount);
 
         public double GetBalance() => _balance;

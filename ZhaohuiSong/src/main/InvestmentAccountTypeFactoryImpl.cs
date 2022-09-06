@@ -2,13 +2,15 @@ using System;
 
 namespace Budmate
 {
+    /// <inheritdoc />
     public class InvestmentAccountTypeFactoryImpl : IInvestmentAccountTypeFactory
     {
+        /// <inheritdoc />
         public IInvestmentAccount CreateForFree(string id, double initialAmount)
         {
             return new Generalised<string>(id, "", fee => 0, s => "", (state, amount) => amount >= 0, initialAmount);
         }
-
+        /// <inheritdoc />
         public IInvestmentAccount CreateWithOperationFees(Func<double, double> fees, string id, double initialAmount)
         {
             return new Generalised<string>(id, "", fees, s => "",
