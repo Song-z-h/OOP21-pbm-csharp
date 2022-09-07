@@ -1,0 +1,182 @@
+﻿[
+  {
+    "Name": "Gino",
+    "LastName": "Pino",
+    "Email": "gino@gin.com",
+    "FC": "GNIPNI85S05A944R",
+    "Password": "BEER",
+    "BankAccounts": [],
+    "MoneyBoxes": [
+      {
+        "NameMoneyBox": "Vacation",
+        "Transactions": []
+      }
+    ],
+    "InvestmentAccounts": [
+      {
+        "NameInvestmentAccount": "Binance",
+        "Assets": [
+          {
+            "NameAsset": "Ethereum",
+            "SymbolAsset": "ETH",
+            "Transactions": []
+          },
+          {
+            "NameAsset": "Unknown",
+            "SymbolAsset": "BTC",
+            "Transactions": [
+              {
+                "NameTransaction": "prova",
+                "Amount": 1.22,
+                "Currency": "BTC",
+                "Date": "11/03/2022",
+                "Time": "10:55"
+              },
+              {
+                "NameTransaction": "prova",
+                "Amount": 1.22,
+                "Currency": "BTC",
+                "Date": "11/03/2022",
+                "Time": "10:55"
+              }
+            ]
+          },
+          {
+            "NameAsset": "Unknown",
+            "SymbolAsset": "BNB",
+            "Transactions": [
+              {
+                "NameTransaction": "prova",
+                "Amount": 1.22,
+                "Currency": "BNB",
+                "Date": "11/03/2022",
+                "Time": "10:55"
+              }
+            ]
+          },
+          {
+            "NameAsset": "Unknown",
+            "SymbolAsset": "CELER",
+            "Transactions": []
+          },
+          {
+            "NameAsset": "Unknown",
+            "SymbolAsset": "LUNC",
+            "Transactions": [
+              {
+                "NameTransaction": "prova",
+                "Amount": 1.22,
+                "Currency": "LUNC",
+                "Date": "11/03/2022",
+                "Time": "10:55"
+              }
+            ]
+          },
+          {
+            "NameAsset": "Unknown",
+            "SymbolAsset": "DOT",
+            "Transactions": [
+              {
+                "NameTransaction": "prova",
+                "Amount": 1.22,
+                "Currency": "DOT",
+                "Date": "11/03/2022",
+                "Time": "10:55"
+              },
+              {
+                "NameTransaction": "prova",
+                "Amount": 1.22,
+                "Currency": "DOT",
+                "Date": "11/03/2022",
+                "Time": "10:55"
+              },
+              {
+                "NameTransaction": "prova",
+                "Amount": 1.22,
+                "Currency": "DOT",
+                "Date": "11/03/2022",
+                "Time": "10:55"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "Pippo",
+    "LastName": "Pluto",
+    "Email": "paperino@inf.com",
+    "FC": "PPPPLT99C05F205A",
+    "Password": "oopspacca",
+    "BankAccounts": [
+      {
+        "NameBanckAccount": "Revolut",
+        "Transactions": [
+          {
+            "NameTransaction": "prova",
+            "Amount": 150.55,
+            "Currency": "dollar",
+            "Date": "12/02/2022",
+            "Time": "12:20"
+          },
+          {
+            "NameTransaction": "CONAD",
+            "Amount": -70.55,
+            "Currency": "dollar",
+            "Date": "12/02/2022",
+            "Time": "12:20"
+          },
+          {
+            "NameTransaction": "CONAD",
+            "Amount": -7.55,
+            "Currency": "dollar",
+            "Date": "12/02/2022",
+            "Time": "12:20"
+          }
+        ]
+      },
+      {
+        "NameBanckAccount": "Poste Italiane",
+        "Transactions": [
+          {
+            "NameTransaction": "Stipendio",
+            "Amount": 700.55,
+            "Currency": "Dollar",
+            "Date": "12/02/2022",
+            "Time": "12:20"
+          }
+        ]
+      }
+    ],
+    "MoneyBoxes": [
+      {
+        "NameMoneyBox": "Vacation",
+        "Transactions": [
+          {
+            "NameTransaction": "Revolut",
+            "Amount": 2.235,
+            "Currency": "ETH",
+            "Date": "12/02/2022",
+            "Time": "12:20"
+          },
+          {
+            "NameTransaction": "gift",
+            "Amount": 20.0,
+            "Currency": "Euro",
+            "Date": "12/02/2022",
+            "Time": "12:20"
+          },
+          {
+            "NameTransaction": "gift",
+            "Amount": 20.0,
+            "Currency": "Euro",
+            "Date": "12/02/2022",
+            "Time": "12:20"
+          }
+        ]
+      }
+    ],
+    "InvestmentAccounts": []
+  }
+]
