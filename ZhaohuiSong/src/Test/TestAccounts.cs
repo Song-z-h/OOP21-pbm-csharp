@@ -1,7 +1,8 @@
 ﻿using System;
+using Budmate;
 using NUnit.Framework;
 
-namespace Budmate
+namespace TestProject1
 {
     [TestFixture]
     public class TestAccounts
@@ -11,7 +12,7 @@ namespace Budmate
         {
             IAccount acc1 = new SimpleAccount("uni credit");
             IAccount acc2 = new SimpleAccount("san polo", (balance, money) => balance >= money,
-                (balance, money) => true, 0);
+                (balance, money) => true);
             IAccount acc3 = new SimpleAccount("san polo", (balance, money) => balance >= money,
                 (balance, money) => true, 200);
             Assert.IsFalse(acc1.Equals(acc2));

@@ -69,9 +69,6 @@ namespace Budmate
             return Equals((SimpleAccount) obj);
         }
 
-        public override int GetHashCode()
-        {
-            return (_id != null ? _id.GetHashCode() : 0);
-        }
+        public override int GetHashCode() => (_id != null ? _id.GetHashCode() : 0);
     }
 }
